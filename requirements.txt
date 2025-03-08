@@ -1,3 +1,5 @@
 numpy
 scipy
 sympy
+opencv-python
+
