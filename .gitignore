@@ -4,3 +4,4 @@ papers
 backup
 *.pyc
 archive
+venv

@@ -6,7 +6,7 @@ from .utils import vec_to_skew_symmetric_mat, rotation_matrix_constraints, obtai
 
 
 class Calibrator4DOF:
-    def __init__(self, motions, sv_limit=0.5):
+    def __init__(self, motions, sv_limit=0.6):
         self.motions = motions
         self.sv_limit = sv_limit
 
