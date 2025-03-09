@@ -51,8 +51,8 @@ def write_transform(file_path, rvecs, tvecs):
                 f.write('  ' + ',  '.join(f"{val: .6f}" for val in row) + '\n')
 
 def main():
-    image_folder = '/home/credog/Desktop/handeye-4dof/run1'
-    output_file = '/home/credog/Desktop/handeye-4dof/run1/target2cam.txt'
+    image_folder = '/home/credog/Desktop/handeye-4dof/raw_data/run1'
+    output_file = '/home/credog/Desktop/handeye-4dof/raw_data/run1/target2cam.txt'
     pattern_size = (5, 8)  # Example pattern size, adjust as needed
     square_size = 20 # Example square size in mm, adjust as needed
     camera_matrix = np.array([[909.10498046875, 0, 645.127075195312], 
