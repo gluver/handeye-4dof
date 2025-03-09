@@ -6,3 +6,4 @@ backup
 archive
 venv
 raw_data
+*.zip
