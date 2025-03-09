@@ -39,8 +39,8 @@ def write_transform(file_path, transforms):
                 f.write('  ' + ',  '.join(f"{val: .6f}" for val in row) + '\n')
 
 def main():
-    input_file = '/home/credog/Desktop/handeye-4dof/run2/robot1.csv'
-    output_file = '/home/credog/Desktop/handeye-4dof/run2/base2gripper.txt'
+    input_file = '/home/credog/Desktop/handeye-4dof/run1/robot1.csv'
+    output_file = '/home/credog/Desktop/handeye-4dof/run1/base2gripper.txt'
     
     data = read_csv(input_file)
     transform = calculate_transform(data)

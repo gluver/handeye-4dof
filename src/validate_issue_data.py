@@ -40,8 +40,8 @@ def read_internet_data(file_path):
 
 def main():
     
-    base_to_hand = read_internet_data('run2/base2gripper.txt')
-    camera_to_marker = read_internet_data('run2/target2cam.txt')
+    base_to_hand = read_internet_data('run1/base2gripper.txt')
+    camera_to_marker = read_internet_data('run1/target2cam.txt')
     # Obtain optimal motions as dual quaternions.
     camera_to_marker = [np.linalg.pinv(t2c) for t2c in camera_to_marker]
     motions = robot_pose_selector(base_to_hand, camera_to_marker)
